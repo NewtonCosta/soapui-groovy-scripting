@@ -13,3 +13,14 @@ new File(baseDir, 'Countries.txt').eachLine { line ->
 
 	// Executing testStep
 	testRunner.runTestStepByName("CountryISOCode")
+
+	/* Logging response
+	 * Getting the testStep 'CountryISOCode' response content xml
+	 * With the response xml holded in 'responseHolder' variable, we can optionaly get the Node value for logging purpose
+	 */	
+	def groovyUtils = new GroovyUtils(context)	
+	def responseHolder = groovyUtils.getXmlHolder( testRunner.testCase.testSteps["CountryISOCode"].testRequest.response.responseContent )	
+	String countryCode = responseHolder.getNodeValue("//*:CountryISOCodeResult") 	
+	log.info (" >>> " + "Country: " +country+ " - " + "ISOCode: " +countryCode)
+	
+}
