@@ -1,5 +1,5 @@
 # Recursive Property Values
- _Assigning file content to a SoapUI propertie value during requesting._
+ _Assigning file content to SoapUI Property's value during test execution._
 
 ### **Description**
 By definition, SoapUI allow property definition at multiple levels within the project hierarchy (*Project, TestSuite, TestCases, TestStep, MockServices, MockResponses and Global Properties*).
