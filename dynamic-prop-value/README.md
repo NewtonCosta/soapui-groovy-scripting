@@ -1,2 +1,20 @@
-# Recursive Property Value
-** Assigning Test Step property value dinamically during the request execution**
+# Recursive Property Values
+ _Assigning file content to a SoapUI propertie value during requesting._
+
+### **Description**
+By definition, SoapUI allow property definition at multiple levels within the project hierarchy (*Project, TestSuite, TestCases, TestStep, MockServices, MockResponses and Global Properties*).
+
+In this project, is shwon how we can use Properties in TestStep project level. The propertie value is assigned dinamicaly during test case execution, by reading these values from file.
+
+### **Main Idea**
+The main idea of this sanple is, while request execution, dinamicaly pass the crountrie's name from .txt file as property value, and get Iso code as response for each country. To acomplish that, I built a SoapUI using <a href="http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso" target="_blank"> DataFlex Web Service project</a> as example and utilize the CountryISOCode request.
+
+### **Project Structure**
+To get this sample running on your SoapUI, after cloning this repo, just go to _SoapUI->File meni->Import project (ctrl+i)->Select soapui-project.xml file_.
+
+### **Runnig the project**
+For script purpose, in order to get propertie values dynamicaly, just create Countries.txt file on C:. After that, just go Run Test Case. For result check, go to script execution log and see the result of request.
+
+## References
+* <a href="https://www.soapui.org/scripting-properties/working-with-properties/" target="_blank"> Working with Properties </a>
+* [DataFlex Web Service](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso)
