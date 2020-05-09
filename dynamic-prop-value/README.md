@@ -16,5 +16,5 @@ To get this sample running on your SoapUI, after cloning this repo, just go to _
 For script purpose, in order to get propertie values dynamicaly, just create Countries.txt file on C:. After that, just go Run Test Case. For result check, go to script execution log and see the result of request.
 
 ## References
-* <a href="https://www.soapui.org/scripting-properties/working-with-properties/" target="_blank"> Working with Properties </a>
+* [Working with Properties]("https://www.soapui.org/scripting-properties/working-with-properties/")
 * [DataFlex Web Service](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso)
