@@ -10,11 +10,11 @@ In this project, is shwon how we can use Properties in TestStep project level. T
 The main idea of this sanple is, while request execution, dinamicaly pass the crountrie's name from .txt file as property value, and get Iso code as response for each country. To acomplish that, I built a SoapUI using <a href="http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso" target="_blank"> DataFlex Web Service project</a> as example and utilize the CountryISOCode request.
 
 ### **Project Structure**
-To get this sample running on your SoapUI, after cloning this repo, just go to _SoapUI->File meni->Import project (ctrl+i)->Select soapui-project.xml file_.
+To get this sample running on your SoapUI, after cloning this repo, just go to `SoapUI->File->Import project (ctrl+i)->Select soapui-project.xml file`.
 
 ### **Runnig the project**
 For script purpose, in order to get propertie values dynamicaly, just create Countries.txt file on C:. After that, just go Run Test Case. For result check, go to script execution log and see the result of request.
 
 ## References
-* [Working with Properties]("https://www.soapui.org/scripting-properties/working-with-properties/")
+* [Working with Properties](https://www.soapui.org/scripting-properties/working-with-properties/)
 * [DataFlex Web Service](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso)
