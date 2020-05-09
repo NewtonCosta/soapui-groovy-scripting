@@ -1,2 +1,2 @@
 # Soapui Groovy Scripting
-A collection of API test scripting with groovy in SoapUI
+An API collection test scripting with groovy in SoapUI
