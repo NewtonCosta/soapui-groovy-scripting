@@ -4,7 +4,7 @@
 ### **Description**
 > _By definition, SoapUI allow property definition at multiple levels within the project hierarchy (*Project, TestSuite, TestCases, TestStep, MockServices, MockResponses and Global Properties*)_.
 
-In this project, is shown how we can use Properties in TestStep project level. The propertie value is assigned dinamically during test case execution, by reading these values from file.
+In this project, I resort to data-driven testing to show how we can use Properties in TestStep project level. The propertie value is assigned dinamically during test case execution, by reading these values from file.
 
 ### **Main Idea**
 The main idea of this sanple is, while request execution, dinamically pass the crountrie's name from .txt file as property value, and get Iso code as response for each country. To acomplish that, I built a SoapUI using <a href="http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso" target="_blank"> DataFlex Web Service project</a> as example and utilize the CountryISOCode request.
